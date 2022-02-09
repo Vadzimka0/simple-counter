@@ -1,0 +1,44 @@
+.counter {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  row-gap: 10px;
+  margin: 0 auto;
+  color: #2A2C35;
+}
+
+.counter > *:first-child {
+  text-align: center;
+  background-color: #63DAFC;
+  /*color: white;*/
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.colored {
+  color: crimson;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.buttons > * {
+  flex-basis: 29%;
+  background-color: #63DAFC;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 28px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.buttons > *:active {
+  transform: scale(0.95);
+}
+
+.buttons > *:disabled {
+  cursor: unset;
+}
+
